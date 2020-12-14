@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="TableExampleView" customModule="HalfViewController" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="625"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rtw-56-bjN">
+                    <rect key="frame" x="16" y="64" width="41.5" height="19.5"/>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Gtc-17-Mtv">
+                    <rect key="frame" x="16" y="103.5" width="378" height="501.5"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <connections>
+                        <outlet property="dataSource" destination="iN0-l3-epB" id="0x9-ua-r9L"/>
+                        <outlet property="delegate" destination="iN0-l3-epB" id="cNm-gD-GFu"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="Gtc-17-Mtv" secondAttribute="bottom" constant="20" id="2Xl-v9-Dga"/>
+                <constraint firstItem="Rtw-56-bjN" firstAttribute="leading" secondItem="Gtc-17-Mtv" secondAttribute="leading" id="Gqh-eI-9Lf"/>
+                <constraint firstItem="Rtw-56-bjN" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="20" id="MZV-Vf-aQm"/>
+                <constraint firstItem="Gtc-17-Mtv" firstAttribute="top" secondItem="Rtw-56-bjN" secondAttribute="bottom" constant="20" id="Zfh-up-8B0"/>
+                <constraint firstItem="Gtc-17-Mtv" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="gft-S0-LYP"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Gtc-17-Mtv" secondAttribute="trailing" constant="20" id="wvK-ft-Qv7"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="tableView" destination="Gtc-17-Mtv" id="syx-91-R8G"/>
+                <outlet property="titleLabel" destination="Rtw-56-bjN" id="D7T-lF-Bd5"/>
+            </connections>
+            <point key="canvasLocation" x="155.07246376811597" y="136.27232142857142"/>
+        </view>
+    </objects>
+</document>

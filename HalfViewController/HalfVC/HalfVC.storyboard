@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Half View Controller-->
+        <scene sceneID="q6M-VC-AHz">
+            <objects>
+                <viewController storyboardIdentifier="HalfViewController" modalPresentationStyle="overCurrentContext" id="dNw-uu-AZ0" customClass="HalfViewController" customModule="HalfViewController" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="hYY-Tm-itK"/>
+                        <viewControllerLayoutGuide type="bottom" id="VpW-g2-7XK"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="eGU-um-z6A">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="z3w-Z5-eTF">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="calibratedRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MQm-TO-gB4">
+                                <rect key="frame" x="0.0" y="862" width="414" height="34"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ROf-be-he9">
+                                <rect key="frame" x="0.0" y="832" width="414" height="30"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="HVj-Ru-beZ"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="O9c-Qx-jFx">
+                                <rect key="frame" x="0.0" y="602" width="414" height="260"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" priority="999" constant="260" id="bak-Vw-AEe"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="ROf-be-he9" firstAttribute="leading" secondItem="ujH-cc-x9p" secondAttribute="leading" id="4fP-nc-T2P"/>
+                            <constraint firstItem="ujH-cc-x9p" firstAttribute="trailing" secondItem="z3w-Z5-eTF" secondAttribute="trailing" id="64m-SD-xtn"/>
+                            <constraint firstItem="z3w-Z5-eTF" firstAttribute="leading" secondItem="ujH-cc-x9p" secondAttribute="leading" id="7EE-d8-JmH"/>
+                            <constraint firstItem="ROf-be-he9" firstAttribute="trailing" secondItem="ujH-cc-x9p" secondAttribute="trailing" id="Hb2-3X-p6K"/>
+                            <constraint firstItem="O9c-Qx-jFx" firstAttribute="leading" secondItem="eGU-um-z6A" secondAttribute="leading" id="Klh-Ri-ogo"/>
+                            <constraint firstItem="MQm-TO-gB4" firstAttribute="leading" secondItem="ujH-cc-x9p" secondAttribute="leading" id="Mjr-ZL-oaI"/>
+                            <constraint firstAttribute="bottom" secondItem="MQm-TO-gB4" secondAttribute="bottom" id="Q0x-KY-1S7"/>
+                            <constraint firstItem="ujH-cc-x9p" firstAttribute="bottom" secondItem="ROf-be-he9" secondAttribute="bottom" id="UD1-ah-enK"/>
+                            <constraint firstItem="z3w-Z5-eTF" firstAttribute="top" secondItem="eGU-um-z6A" secondAttribute="top" id="W7V-za-gSX"/>
+                            <constraint firstItem="ujH-cc-x9p" firstAttribute="trailing" secondItem="MQm-TO-gB4" secondAttribute="trailing" id="XSx-F2-OyV"/>
+                            <constraint firstAttribute="bottom" secondItem="z3w-Z5-eTF" secondAttribute="bottom" id="brs-Cn-4t1"/>
+                            <constraint firstItem="ujH-cc-x9p" firstAttribute="bottom" secondItem="O9c-Qx-jFx" secondAttribute="bottom" id="fjU-sw-w0x"/>
+                            <constraint firstItem="MQm-TO-gB4" firstAttribute="top" secondItem="ujH-cc-x9p" secondAttribute="bottom" id="o5U-hE-vsT"/>
+                            <constraint firstAttribute="trailing" secondItem="O9c-Qx-jFx" secondAttribute="trailing" id="x1v-Sb-iaJ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ujH-cc-x9p"/>
+                    </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <connections>
+                        <outlet property="backgroundView" destination="z3w-Z5-eTF" id="kfb-VR-YVb"/>
+                        <outlet property="bottomInsetView" destination="MQm-TO-gB4" id="DHo-cB-Mbz"/>
+                        <outlet property="constraintContainerHeight" destination="bak-Vw-AEe" id="pkL-X9-2kx"/>
+                        <outlet property="constraintContainerToBottom" destination="fjU-sw-w0x" id="qAN-9m-jev"/>
+                        <outlet property="containerBottomView" destination="ROf-be-he9" id="Em9-bu-Sc3"/>
+                        <outlet property="containerBottomVwHt" destination="HVj-Ru-beZ" id="2Y0-eG-VSY"/>
+                        <outlet property="viewContainer" destination="O9c-Qx-jFx" id="dHQ-ei-qfv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0h6-n1-CAR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3908" y="117"/>
+        </scene>
+    </scenes>
+</document>

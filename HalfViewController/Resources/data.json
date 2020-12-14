@@ -1,0 +1,27 @@
+[
+    {
+        "title": "Information View",
+        "xib": "InfoView"
+    },
+    {
+        "title": "Information View",
+        "xib": "InfoView"
+    },
+    {
+        "title": "Keyboard View",
+        "xib": "KeyboardView"
+    },
+    {
+        "title": "View with alert",
+        "xib": "AlertExampleView"
+    },
+    {
+        "title": "TableView with maximum height",
+        "xib": "InfoView"
+    },
+    {
+        "title": "Moving to another view",
+        "xib": "InfoView",
+        "additionalData": {}
+    }
+]
