@@ -14,39 +14,37 @@ Move the two files (HalfVC.swift and HalfVC.storyboard) in HalfVC folder to your
 ***1.1*** Details of the protocol
 
 ```swift
-/*
- *******************************************
+/********************************************/
  var delegate: HalfVCDelegate? {get}
 --- your view calls methods of HalfVCDelegate through this property
  
- *******************************************
+ /*******************************************/
  func assignValues(_ data: Any?, delegate: HalfVCDelegate)
---- assign the data from the VC presenting HalfVC to your view
+// assign the data from the VC presenting HalfVC to your view
  
-    Check example implementation in InfoView, KeyboardView, AlertExampleView, TableExampleView, TwoViewFirstView or TwoViewSecondView
+//    Check example implementation in InfoView, KeyboardView, AlertExampleView, TableExampleView, TwoViewFirstView or TwoViewSecondView
  
- *******************************************
+ /*******************************************/
  func assignPresentingControllerDelegates(delegate: Any?)
---- assign reference of your presenting VC to your view
-    This is better if done through a protocol
+//    assign reference of your presenting VC to your view
+//    This is better if done through a protocol
  
-    Check example implementation in InfoView, KeyboardView, TableExampleView or TwoViewSecondView
+//    Check example implementation in InfoView, KeyboardView, TableExampleView or TwoViewSecondView
  
- *******************************************
+ /*******************************************/
  func giveSizeWith() -> CGSize
---- gives size of your view. You can use the following:
+//  gives size of your view. You can use the following:
  
-    public func giveSizeWith() -> CGSize {
-        self.layoutIfNeeded()
-        if self.intrinsicContentSize.width < 0 || self.intrinsicContentSize.height < 0 {
-            return self.systemLayoutSizeFitting(UIView.layoutFittingCompressedSize)
-        } else {
-            return self.intrinsicContentSize
-        }
-    }
+  public func giveSizeWith() -> CGSize {
+      self.layoutIfNeeded()
+      if self.intrinsicContentSize.width < 0 || self.intrinsicContentSize.height < 0 {
+          return self.systemLayoutSizeFitting(UIView.layoutFittingCompressedSize)
+      } else {
+          return self.intrinsicContentSize
+      }
+  }
  
- *******************************************
+ /*******************************************/
  func uiSettingsOnLoad()
---- when you want to make any changes to your view after viewDidLoad of HalfViewController
-*/
+//  when you want to make any changes to your view after viewDidLoad of HalfViewController
 ```
