@@ -48,3 +48,35 @@ Move the two files (HalfVC.swift and HalfVC.storyboard) in HalfVC folder to your
  func uiSettingsOnLoad()
 //  when you want to make any changes to your view after viewDidLoad of HalfViewController
 ```
+
+```swift
+***1.2*** Methods of HalfVC available to your view:
+
+/*******************************************/
+ func dismissController(completion: (() -> Void)?)
+//  if you want to dismiss the HalfViewController (and thereby also remove your view) from your view
+ 
+/*******************************************/
+ func loadNewXib(xibName: String, bundle: Bundle, data: Any?)
+//  when you want to replace your current view with a new view from an XIB
+
+/*******************************************/
+ func keyboardShowed(moveUpByHeight: CGFloat)
+//  when a keyboard is to be presented. i.e. on the keyboardWillShow notification
+ For example, check KeyboardView
+ 
+/*******************************************/
+  func keyboardHidden()
+//  when a keyboard is to be dismissed. i.e. on the keyboardWillHide notification
+  For example implementation, check KeyboardView
+
+/*******************************************/
+  func keyboardHidden()
+//  when a keyboard is to be dismissed. i.e. on the keyboardWillHide notification
+  For example implementation, check KeyboardView
+ 
+/*******************************************/
+ func showAlert(title: String, message: String)
+//  when we need to show an alert on top of HalfViewController
+  For example implementation, check AlertExampleView
+```
