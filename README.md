@@ -5,7 +5,10 @@ A common View Controller for presenting developer provided views (from XIBs) fro
 
 It's pretty easy to use. The major advantage is that you can replace semi-view with another semi-view very easily. You can just pass the XIB name and initialization data of the new view and the HalfViewController will handle the rest.
 
-![](./gif/halfvc1.gif) ![](./gif/halfvc2.gif)
+![](./gif/halfvc1.gif)
+
+
+ ![](./gif/halfvc2.gif)
 
 Examples are given for various cases including cases of keyboard handling on the semi-view, alert view on tap of UIButton inside semi-view and tableview in the semi-view among other basic examples.
 
