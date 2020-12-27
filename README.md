@@ -10,11 +10,11 @@ It's pretty easy to use. The major advantage is that you can replace semi-view w
 Examples are given for various cases including cases of keyboard handling on the semi-view, alert view on tap of UIButton inside semi-view and tableview in the semi-view among other basic examples.
 
 ## Usage
-Move the two files (HalfVC.swift and HalfVC.storyboard) in HalfVC folder to your project and start using them.
+**1** Move the two files (HalfVC.swift and HalfVC.storyboard) in HalfVC folder to your project and start using them.
 
-**1** Your custom view needs to implement ```swift HalfVCView ``` protocol
+**2** Your custom view needs to implement ```swift HalfVCView ``` protocol
 
-***1.1*** Details of the protocol:
+***2.1*** Details of the protocol:
 
 ```swift
 /********************************************/
@@ -52,7 +52,7 @@ Move the two files (HalfVC.swift and HalfVC.storyboard) in HalfVC folder to your
 //  when you want to make any changes to your view after viewDidLoad of HalfViewController
 ```
 
-***1.2*** Methods of HalfVC available to your view:
+***2.2*** Methods of HalfVC available to your view:
 
 ```swift
 /*******************************************/
